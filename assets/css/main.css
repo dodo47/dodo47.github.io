@@ -115,19 +115,19 @@ input, select, textarea {
 	}
 
 	.spotlight:nth-child(1) {
-		background-color: rgba(110, 100, 152, 0.135);
+		background-color: rgba(110, 100, 152, 0.1);
 	}
 
 	.spotlight:nth-child(2) {
-		background-color: rgba(110, 100, 152, 0.1825);
+		background-color: rgba(110, 100, 152, 0.15);
 	}
 
 	.spotlight:nth-child(3) {
-		background-color: rgba(110, 100, 152, 0.25);
+		background-color: rgba(110, 100, 152, 0.2);
 	}
 
 	.spotlight:nth-child(4) {
-		background-color: rgba(0, 0, 0, 0.3);
+		background-color: rgba(110, 110, 152, 0.25);
 	}
 
 	.spotlight:nth-child(5) {
