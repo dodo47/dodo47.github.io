@@ -4000,3 +4000,102 @@ input, select, textarea {
 .research-visual-copy > a {
 	margin-top: auto;
 }
+
+@media screen and (max-width: 736px) {
+
+	/* --------------------
+	   Self-organising systems
+	   -------------------- */
+
+	.research-dual {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 2em;
+		width: 100%;
+	}
+
+	.research-visual-feature {
+		width: 100%;
+		max-width: 100%;
+		min-width: 0;
+	}
+
+	.research-visual-feature img {
+		width: 100%;
+		height: auto;
+		max-height: 20em;
+		object-fit: contain;
+	}
+
+	.research-visual-copy {
+		padding: 1.5em;
+	}
+
+}
+
+
+/* ============================================================
+   PHONE PORTRAIT FIXES
+   ============================================================ */
+
+@media screen and (max-width: 736px) {
+
+	/* --------------------
+	   Homepage projects
+	   -------------------- */
+
+	.projects-grid {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1.75em;
+		width: 100%;
+	}
+
+	.project-card {
+		width: 100%;
+		max-width: 100%;
+		min-width: 0;
+		margin: 0;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+
+	.project-card > img {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+		box-sizing: border-box;
+	}
+
+	.project-content {
+		width: 100%;
+		min-width: 0;
+		box-sizing: border-box;
+		padding: 1.5em;
+	}
+
+	.project-content h3,
+	.project-content p,
+	.project-meta {
+		max-width: 100%;
+		overflow-wrap: break-word;
+	}
+
+}
+
+@media screen and (max-width: 736px) {
+
+	/* Always show research visual before text on mobile */
+
+	.research-split .research-media,
+	.research-split-reverse .research-media {
+		order: 1;
+	}
+
+	.research-split .research-copy,
+	.research-split-reverse .research-copy {
+		order: 2;
+	}
+
+}
