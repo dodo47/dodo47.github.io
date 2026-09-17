@@ -1,0 +1,605 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dominik Dold - Highlights</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<link rel="shortcut icon" href="favicon.png" type="image/png">
+		<link rel="icon" href="favicon.png" sizes="1664x1624" type="image/png">
+		<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+		<link rel="manifest" href="favicon/site.webmanifest">
+		<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="msapplication-config" content="favicon/browserconfig.xml">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+						<!-- Header -->
+						<div id="header">
+
+							<!-- Inner -->
+								<div class="inner">
+									<header> 
+									</header>
+									<footer>
+									</footer>
+								</div>
+		
+							<!-- Nav -->
+								<nav id="nav">
+									<ul>
+										<li><a href="index.html">Home</a></li>
+								<li><a href="research.html">Research</a></li>
+								<li><a href="publications.html">Publications</a></li>
+								<li><a href="teaching.html">Teaching</a></li>
+								<li><a href="talks.html">Talks</a></li>
+								<li><a href="cv.html">CV</a></li>
+										<!-- <li>Showcase
+										<ul>
+											<li><a href="#">Events</a></li>
+											<li><a href="#">Projects</a></li>
+										</ul>
+										</li> -->
+									</ul>
+								</nav>
+		
+						</div>
+
+			<!-- Main -->
+<div class="wrapper style1">
+					<div class="container">
+						<article id="main" class="special">
+				
+
+			<!-- Intro -->
+				<header>
+					<h2>Research</h2>
+				</header>
+			
+
+			<!-- ============================================================
+			     01 THEORY OF SPIKING NEURAL NETWORKS
+			     ============================================================ -->
+
+			<section class="research-section">
+
+				<div class="research-split">
+
+					<div class="research-media">
+						<a href="images/YYMosaic.png">
+							<img src="images/YYMosaic.png"
+								 alt="Causal pieces of a spiking neural network" />
+						</a>
+
+						<p class="research-caption">
+							Causal pieces of a spiking neural network, evaluated for the data points of the Yin-Yang dataset. Every coloured region is a causal piece.
+						</p>
+					</div>
+
+
+					<div class="research-copy">
+
+						<div class="research-number">
+							01 · Foundations
+						</div>
+
+						<h2>Theory of spiking neural networks</h2>
+
+						<p class="research-summary">
+							What can spiking neural networks compute, how reliably can
+							they learn, and how do their capabilities compare with
+							conventional neural networks? I develop mathematical tools
+							for analysing their expressivity, approximation properties,
+							and generalisation behaviour.
+						</p>
+
+
+						<div class="research-result">
+
+							<h4>Causal pieces</h4>
+
+							<p>
+								The input space of a spiking neural network can be
+								decomposed into <em>causal pieces</em>, regions in which
+								the same subnetwork determines the output spike times.
+								The number of causal pieces a nLIF neural network possesses
+								can be used to derive lower bounds on approximation errors
+								and guide network initialisation.
+							</p>
+
+						</div>
+
+
+						<div class="research-result">
+
+							<h4>Generalisation bounds</h4>
+
+							<p>
+								For affine spiking neural networks, continuity with
+								respect to parameters enables the derivation of generalisation
+								bounds using classical covering numbers. Interestingly, network depth has comparatively
+								little adverse effect on the generalisation bound.
+							</p>
+
+						</div>
+
+
+						<div class="research-result">
+
+							<h4>Transference principle</h4>
+
+							<p>
+								The above bound are valid for neurons that spike at most once.
+								But what about neurons that spike multiple times?
+								In recent work, we proved that approximation results can be transferred between
+								the two settings, showing that the two paradigms have equivalent approximation capabilities.
+							</p>
+
+						</div>
+
+
+						<div class="research-links">
+
+							<a href="https://arxiv.org/abs/2504.14015"
+							   target="_blank">
+								Causal pieces &rarr;
+							</a>
+
+							<a href="https://jmlr.org/beta/papers/v26/24-0658.html"
+							   target="_blank">
+								Generalisation bounds &rarr;
+							</a>
+
+							<a href="https://arxiv.org/abs/2603.13478"
+							   target="_blank">
+								Transference principle &rarr;
+							</a>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>
+
+
+
+			<!-- ============================================================
+     02 NEURO-INSPIRED LEARNING & COMPUTING
+     ============================================================ -->
+
+<section class="research-section">
+
+	<div class="research-split research-split-reverse">
+
+		<div class="research-copy">
+
+			<div class="research-number">
+				02 · Neuro-inspired computing
+			</div>
+
+			<h2>Neuro-inspired learning &amp; computing</h2>
+
+			<p class="research-summary">
+				Biological neural systems compute with sparse,
+				event-based communication and highly local interactions. I study how
+				such principles can inspire new learning algorithms and efficient
+				computing architectures.
+			</p>
+
+
+			<div class="research-result">
+
+				<h4>Neural sampling</h4>
+
+				<p>
+					Spiking neural networks can represent and sample from probability
+					distributions using their temporal dynamics. I developed
+					self-sufficient sampling networks in which deterministic neural
+					circuits generate the effective stochasticity required for
+					probabilistic inference.
+				</p>
+
+			</div>
+
+
+			<div class="research-result">
+
+				<h4>Biologically plausible learning</h4>
+
+				<p>
+					I have introduced a neuronal least action principle that describes how cortical circuits could
+					approximate gradient-based learning. The derived continuous dynamics could be realised by dendritic computing, inhibitory microcircuits, and local plasticity.
+				</p>
+
+			</div>
+
+
+			<div class="research-result">
+
+				<h4>Efficient computing substrates</h4>
+
+				<p>
+					Neuromorphic hardware offers a promising route towards
+					resource-efficient AI. My work includes evaluating spiking neural network with purely temporal coding for
+					onboard AI applications.
+				</p>
+
+			</div>
+
+
+			<div class="research-links">
+
+				<a href="https://doi.org/10.1016/j.neunet.2019.08.002"
+				   target="_blank">
+					Neural sampling &rarr;
+				</a>
+
+				<a href="https://doi.org/10.7554/eLife.89674.1"
+				   target="_blank">
+					Neuronal least action &rarr;
+				</a>
+
+				<a href="https://doi.org/10.1007/s42064-024-0256-y"
+				   target="_blank">
+					Spike-based onboard AI &rarr;
+				</a>
+
+			</div>
+
+		</div>
+
+
+		<div class="research-media">
+
+			<a href="animations/dreaming.gif">
+				<img src="animations/dreaming2.gif"
+					 alt="Spiking neural networks generating handwritten digits" />
+			</a>
+
+			<p class="research-caption">
+				Self-sufficient neural sampling with spiking neural networks. Every pixel represents the averaged spike activity of one neuron. The activity of the hidden neurons is used as background noise for other neurons in the ensemble.
+			</p>
+
+		</div>
+
+	</div>
+
+
+	<!-- Secondary visual -->
+	<div class="research-secondary-visual">
+
+		<div class="research-secondary-media">
+			<img src="animations/eros_2500.gif"
+				 alt="GeodesyNet emulated on memristive hardware" />
+		</div>
+
+		<div class="research-secondary-copy">
+
+			<h3>From neural models to emerging hardware</h3>
+
+			<p>
+				I am also interested in how to map neural algorithms onto emerging computing substrates. This includes studying how analogue noise, e.g., in
+				memristive accelerators, affects the performance of onboard applications such as asteroid geodesy (training a neural network to recover the mass density of a celestial body from orbital data).
+			</p>
+
+			<a href="https://doi.org/10.1016/j.actaastro.2025.10.049"
+			   target="_blank">
+				Read more &rarr;
+			</a>
+
+		</div>
+
+	</div>
+
+</section>
+
+			<!-- ============================================================
+			     03 GRAPH LEARNING
+			     ============================================================ -->
+
+			<section class="research-section">
+
+				<div class="research-split">
+
+					<div class="research-media">
+
+						<a href="animations/DiffLatt.gif">
+							<img src="animations/DiffLatt.gif"
+								 alt="Differentiable inverse design of lattice materials" />
+						</a>
+
+						<p class="research-caption">
+							Gradient-based inverse design of graph-structured lattice
+							materials.
+						</p>
+
+					</div>
+
+
+					<div class="research-copy">
+
+						<div class="research-number">
+							03 · Structured learning
+						</div>
+
+						<h2>Learning on graphs &amp; structured systems</h2>
+
+						<p class="research-summary">
+							Many systems can be modelled as a relational graph, for example social networks, industrial systems, and physical structures (e.g. lattice materials).
+							I develop machine learning methods that explicitly exploit
+							this structure, combining ideas from graph representation learning,
+							neuroscience, and differentiable intelligence.
+						</p>
+
+
+						<div class="research-result">
+
+							<h4>Spike-based graph learning</h4>
+
+							<p>
+								How can we represent relational graph data using spikes?
+								I introduced spike-based embedding methods for
+								multi-relational graphs and worked on spiking relational
+								graph neural networks.
+							</p>
+
+						</div>
+
+
+						<div class="research-result">
+
+							<h4>Knowledge graphs &amp; cybersecurity</h4>
+
+							<p>
+								Knowledge graphs provide a natural way to model
+						     industrial automation systems. By rephrasing anomaly detection as a link prediction task on this knowledge graph representation, I developed
+							 an interpretable method for detecting cyber-attacks.
+							</p>
+
+						</div>
+
+
+						<div class="research-result">
+
+							<h4>Differentiable inverse design</h4>
+
+							<p>
+								By combining message passing, automatic differentiation, GNNExplainer, and surrogate-gradients, I derived a method for inversely designing lattice
+								structures with desired mechanical properties.
+							</p>
+
+						</div>
+
+
+						<div class="research-links">
+
+							<a href="https://arxiv.org/abs/2208.02576"
+							   target="_blank">
+								Spike-based graph learning &rarr;
+							</a>
+
+							<a href="https://arxiv.org/abs/2105.08741"
+							   target="_blank">
+								Cybersecurity &rarr;
+							</a>
+
+							<a href="https://doi.org/10.1016/j.xcrp.2023.101586"
+							   target="_blank">
+								Inverse design &rarr;
+							</a>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>
+
+
+
+			<!-- ============================================================
+			     04 SELF-ORGANISING SYSTEMS
+			     ============================================================ -->
+
+			<section class="research-section research-selforganising">
+
+				<div class="research-section-heading">
+
+					<div class="research-number">
+						04 · Autonomous systems
+					</div>
+
+					<h2>Self-organising &amp; reconfigurable systems</h2>
+
+					<p>
+						How can physical systems autonomously organise themselves
+						using only local interactions? I explore learning and
+						optimisation methods for modular and continuously reconfigurable
+						structures, with a particular interest in future space
+						infrastructure.
+					</p>
+
+				</div>
+
+
+				<div class="research-dual">
+
+					<!-- Cubes -->
+
+					<article class="research-visual-feature">
+
+						<a href="animations/ISS_cubes2.gif">
+							<img src="animations/ISS_cubes2.gif"
+								 alt="Self-configuring modular cube ensemble forming the International Space Station" />
+						</a>
+
+						<div class="research-visual-copy">
+
+							<h3>Self-configuring cube ensembles</h3>
+
+							<p>
+								Modular robots composed of pivoting cubes can
+								reconfigure into desired structures autonomously.
+								Using reinforcement learning and geometric deep
+								learning, we investigate how individual modules can
+								coordinate using predominantly local information.
+							</p>
+
+							<a href="https://arxiv.org/abs/2509.03140"
+							   target="_blank">
+								Read more &rarr;
+							</a>
+
+						</div>
+
+					</article>
+
+
+					<!-- Totimorphic -->
+
+					<article class="research-visual-feature">
+
+						<a href="animations/Video_S3a.gif">
+							<img src="animations/Video_S3a.gif"
+								 alt="Totimorphic mirror deploying and reconfiguring to focus light." />
+						</a>
+
+						<div class="research-visual-copy">
+
+							<h3>Totimorphic structures</h3>
+
+							<p>
+								Totimorphic lattices can continuously alter their
+								geometry without deforming its beam elements.
+								I investigate optimisation methods for programming
+								such structures for functional tasks, including
+								adaptive telescope mirrors, metamaterials, and other
+								reconfigurable space structures.
+							</p>
+
+							<a href="https://doi.org/10.1038/s44453-025-00019-4"
+							   target="_blank">
+								Read more &rarr;
+							</a>
+
+						</div>
+
+					</article>
+
+				</div>
+
+			</section>
+
+
+
+			<!-- ============================================================
+			     EMERGING DIRECTION: QUANTUM ML
+			     ============================================================ -->
+
+			<section class="research-emerging">
+
+				<div class="research-emerging-label">
+					Emerging direction
+				</div>
+
+				<div class="research-emerging-content">
+
+					<div>
+						<h2>Explainable quantum machine learning</h2>
+
+						<p>
+							Photonic quantum chips represent an alternative solution for machine learning in low-power environments such as onboard a spacecraft. 
+							Thus, I recently started a new research direction on explainable quantum machine learning for space applications.
+						</p>
+					</div>
+
+					<div class="research-emerging-link">
+						<a href="https://activities.esa.int/core/servlet/hype/IMT?documentTableId=2662306466367955196&userAction=Browse&templateName=&documentId=51a37416f1a822ab45b8157a8cdd0136"
+						   target="_blank">
+							ESA project page &rarr;
+						</a>
+					</div>
+
+				</div>
+
+			</section>
+
+
+		</article>
+	</div>
+</div>
+						
+					<!-- Footer -->
+					<div id="footer">
+						<section class="contact">
+										<header>
+											<h3>Feel free to contact me.</h3>
+										</header>
+										<ul class="icons">
+											<li><a href="mailto:dodo.science@web.de" class="icon fa-envelope"><span class="label">EMail</span></a></li>
+											<li>
+											<a href="https://scholar.google.com/citations?user=RNlSvncAAAAJ&hl"
+											class="icon solid fa-graduation-cap"
+											target="_blank">
+												<span class="label">Google Scholar</span>
+											</a>
+										</li>
+											<li><a href="https://github.com/dodo47" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+											<li><a href="https://www.linkedin.com/in/dominik-dold/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+											<li>
+											<a href="https://bsky.app/profile/dodo47.bsky.social"
+											class="icon bluesky"
+											target="_blank"
+											aria-label="Bluesky">
+
+												<svg viewBox="0 0 600 530" aria-hidden="true">
+													<path d="m135.72 44.03c66.5 49.92 138.02 151.14 164.28 205.46 26.26-54.32 97.78-155.54 164.28-205.46C512.26 8 590-19.85 590 68.86c0 17.71-10.15 148.79-16.1 170.07-20.68 73.96-96.14 92.85-163.25 81.43 117.3 19.97 147.14 86.09 82.7 152.22-122.39 125.59-175.91-31.51-189.63-71.77-2.52-7.39-3.7-10.85-3.72-7.91-.02-2.94-1.2.52-3.72 7.91-13.72 40.26-67.24 197.36-189.63 71.77-64.44-66.13-34.6-132.25 82.7-152.22-67.11 11.42-142.57-7.47-163.25-81.43C20.15 217.65 10 86.57 10 68.86 10-19.85 87.74 8 135.72 44.03Z"/>
+												</svg>
+
+												<span class="label">Bluesky</span>
+											</a>
+										</li>
+										</ul>
+						</section>
+
+					<!-- Copyright -->
+						<div class="copyright">
+							<ul class="menu">
+								<li>&copy; 2026. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+
+				
+
+		
+	</div>
+
+							
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
